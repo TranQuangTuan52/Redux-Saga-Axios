@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "467308488152",
+    "project_id": "redux-saga-45c4d",
+    "storage_bucket": "redux-saga-45c4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467308488152:android:6d802d98279b0a7b5fbead",
+        "android_client_info": {
+          "package_name": "com.reduxsaga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467308488152-gmtr3kspbimh84smkvvifheut7qann7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw3v3Snrezn2V43U8zpnJufLafpvcW0pM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467308488152-gmtr3kspbimh84smkvvifheut7qann7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
