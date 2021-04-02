@@ -1,28 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'; 
 import { StyleSheet, Text, View, Dimensions, Image, TouchableOpacity } from 'react-native'
 const { width, height } = Dimensions.get('window');
 import {useDispatch} from 'react-redux'
 import * as actionTypes from '../redux/actions/actionTypes'
-const itemProduct = ({item}) => {
+function itemProduct({item}) {
 
-
-    //const dispatch = useDispatch();    // <--- invalied hook call
-
+    const dispatch = useDispatch();    // <--- invalied hook call
 
     return (
-        <TouchableOpacity activeOpacity = {0.9} style={styles.container}>
+        <TouchableOpacity activeOpacity = {0.9} style={itemStyles.container}>
             {/* header */}
-            <View style={styles.header}>
-                <TouchableOpacity activeOpacity={0.9} style={styles.removeButton} >
-                    <Text style = {styles.removeButtonText}>X</Text>
+            <View style={itemStyles.header}>
+                <TouchableOpacity activeOpacity={0.9} style={itemStyles.removeButton} >
+                    <Text style = {itemStyles.removeButtonText}>X</Text>
                 </TouchableOpacity>
             </View>
-            <Image resizeMode='stretch' source={{ uri: item.image }} style={styles.image} />
+            <Image resizeMode='stretch' source={{ uri: item.image }} style={itemStyles.image} />
             {/* footer */}
-            <View style={styles.content}>
-                <Text style = {styles.textTitle}>{item.title}</Text>
-                <View style = {styles.containerPrice}>
-                    <Text style={styles.textPrice} >{item.price}</Text>                   
+            <View style={itemStyles.content}>
+                <Text style = {itemStyles.textTitle}>{item.title}</Text>
+                <View style = {itemStyles.containerPrice}>
+                    <Text style={itemStyles.textPrice} >{item.price}</Text>                   
                </View>
             </View>
         </TouchableOpacity>
@@ -31,7 +29,7 @@ const itemProduct = ({item}) => {
 
 export default itemProduct
 
-const styles = StyleSheet.create({
+export const itemStyles = StyleSheet.create({
     container: {
         width: width - width/5,
         height: height/2 + 130, 

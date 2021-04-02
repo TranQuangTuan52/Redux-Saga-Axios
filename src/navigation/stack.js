@@ -5,13 +5,15 @@ import Home from '../screens/home'
 import Login from '../screens/login'
 import Signup from '../screens/signup'
 import AddProduct from '../screens/addProduct';
+import EditProduct from '../screens/editProduct';
 const stack = () => {
     return (
         <Stack.Navigator screenOptions = {{headerShown: false}} initialRouteName = 'Home' > 
             <Stack.Screen name='Login' component={Login} />
             <Stack.Screen name='Signup' component={Signup} />
             <Stack.Screen name='Home' component={Home} />
-            <Stack.Screen name = 'AddProduct' component = {AddProduct} />
+            <Stack.Screen name='AddProduct' component={AddProduct} />
+            <Stack.Screen name = 'EditProduct' component = {EditProduct} />
        </Stack.Navigator>
     )
 }
